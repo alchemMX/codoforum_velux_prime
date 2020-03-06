@@ -10,15 +10,15 @@
 
     <ul class="uk-slider-items uk-child-width-1 ">
         <li>
-            <img src="https://wallpaperaccess.com/full/759501.jpg" alt="">
+            <img src="https://i.imgur.com/G3FUwi0.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>Passion for games</h1></div>
         </li>
         <li>
-            <img src="https://wallpaperaccess.com/full/759501.jpg" alt="">
+            <img src="https://i.imgur.com/G3FUwi0.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>2</h1></div>
         </li>
         <li>
-            <img src="https://wallpaperaccess.com/full/759501.jpg" alt="">
+            <img src="https://i.imgur.com/G3FUwi0.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>3</h1></div>
         </li>
    
