@@ -4,7 +4,7 @@ CodoForum Gaming Theme
 Velux Prime is curently in beta. 
 
 Installation: 
-1. Copy theme files in sites\default\themes
+1. Copy theme files in sites\default\themes. The theme folder must be named velux_prime !important.
 2. Copy constants.php in sites\default 
 
 The constants.php was modified to use velux_prime assets as default.
