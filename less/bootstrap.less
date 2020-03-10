@@ -2363,14 +2363,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: @greenCol;
+  border-color: @greenCol;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: @darkColor;
+  border-color: @greenCol;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -3027,7 +3027,7 @@ input[type="button"].btn-block {
   color: #212529;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: @secColor;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
@@ -5278,13 +5278,13 @@ input[type="button"].btn-block {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
-  color: #000;
-  text-shadow: 0 1px 0 #fff;
+  color: @greenCol;
+  text-shadow: 0 1px 0 #479a1d;
   opacity: .5;
 }
 
 .close:hover, .close:focus {
-  color: #000;
+  color: #479a1d;
   text-decoration: none;
   opacity: .75;
 }
@@ -5363,7 +5363,7 @@ button.close {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: @secColor;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
@@ -5426,7 +5426,7 @@ button.close {
   -ms-flex-pack: end;
   justify-content: flex-end;
   padding: 1rem;
-  border-top: 1px solid #e9ecef;
+  border-top: 1px solid @greenCol;
 }
 
 .modal-footer > :not(:first-child) {

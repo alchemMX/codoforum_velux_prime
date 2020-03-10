@@ -6,28 +6,11 @@
     <input type="hidden" id="page_sort_option" value="newest"/>
 
     <div class="container" id="codo_row">
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" style="border-bottom: 5px solid #5fcc29;margin-bottom: 16px;" uk-slider>
 
-    <ul class="uk-slider-items uk-child-width-1 ">
-        <li>
-            <img src="https://i.imgur.com/G3FUwi0.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>Passion for games</h1></div>
-        </li>
-        <li>
-            <img src="https://i.imgur.com/G3FUwi0.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>2</h1></div>
-        </li>
-        <li>
-            <img src="https://i.imgur.com/G3FUwi0.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>3</h1></div>
-        </li>
-   
-    </ul>
-
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-</div>
+    {* Slider Start *}
+    {include file='forum/slider.tpl'}
+    {* Slider End *}
+    
     <div class="row">
 
         <div class="col-lg-12 codo_mobile_top_container">
@@ -98,7 +81,7 @@
         <!--end all topics -->
         <div class="codo_categories col-lg-4" id="codo_categories_sidebar">
 
-                <div class="row" id="codo_category_all_topics" style="border-bottom:1px solid #eee;">
+                <div class="row" id="codo_category_all_topics" style="border-bottom:1px solid #5fcc29;">
 
                     <div class="codo_categories_category col-md-12">
                         <!--<i class="icon-arrow-up"></i>-->
@@ -203,7 +186,7 @@
 
             <div class="codo_sidebar_settings">
 
-                <div style="border-bottom:1px solid #eee;margin:0;height:50px;">
+                <div style="border-bottom:1px solid #5fcc29;margin:0;height:50px;">
 
                     <div class="codo_categories_category col-md-12">
 

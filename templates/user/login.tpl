@@ -44,6 +44,7 @@
           margin-top: 70px;
     padding: 20px;
         }
+     
 
     </style>
 
@@ -58,11 +59,11 @@
 
     <div class="container">
 
-        <div class="row">
+        <div  class="row">
 
             {"block_login_form_before"|load_block}  
 
-            <div id="codo_login_container" class="codo_block col-md-12">
+            <div id="codo_login_container" class="codo_block col-md-6">
             {if !$can_view_forum} 
 
                 <div class="codo_notification codo_notification_error col-md-12">
@@ -85,14 +86,14 @@
 
                 <div class="row">
 
-                    <div class="form-group col-md-6">            
-                        <input class="codo_input" type="text" id="name" maxlength="60" placeholder="{$name_placeholder}" required="required"/>
+                    <div class="form-group col-md-12">            
+                        <input class="codo_input " type="text" id="name" maxlength="60" placeholder="{$name_placeholder}" required="required"/>
                     </div>
 
                 </div>
                 <div class="row">
 
-                    <div class="form-group col-md-6">            
+                    <div class="form-group col-md-12">            
                         <input class="codo_input" type="password" id="pass" maxlength="128" placeholder="{_t("password")}" required="required"/>
                     </div>
 
@@ -100,8 +101,8 @@
 
                 <div class="row">
 
-                    <div class="col-md-12">
-                        <input id="remember_me" type="checkbox" /><span class="remember_me_txt">{_t(" Keep me logged in")}</span>
+                    <div class="form-group col-md-12">
+                        <input id="remember_me" type="checkbox" /><span class="remember_me_txt">{_t(" Keep me logged in")}</span> <br />
                         <button class="codo_btn codo_btn_primary" id="codo_login">{_t("Login")}</button>
                     </div>
 
@@ -110,13 +111,14 @@
 
                 <div class="row">
 
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <a  class="codo_login_register_link" href="{$register_url}">{_t("Register")}</a>
                         <a href="{$smarty.const.RURI}user/forgot">{_t("I forgot my password")}</a>            
                     </div>
 
 
                 </div>
+                
                 {"block_login_form_end"|load_block}  
 
             </div>

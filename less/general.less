@@ -804,7 +804,7 @@ img {
 
   .codo_back_to_top_arrow {
 
-    background: @linkColor;
+    background: @greenCol;
     margin-top: 1px;
     margin-right: -14px;
     width: 0;
@@ -818,7 +818,7 @@ img {
 
     &:hover {
 
-      background: @linkHoverColor !important;
+      background: @greenCol !important;
     }
 
     > i {
@@ -990,8 +990,7 @@ body {
   position: relative;
   height: 40px;
   line-height: 40px;
-  background: @endGradient; /* Old browsers */
-  background: linear-gradient(to right, @endGradient 0%,@startGradient 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: @mainColor;
   border-color: @widgetHeaderBorderColor;
   -webkit-background-clip: padding-box;
   color: @widgetHeaderColor;
@@ -1001,7 +1000,7 @@ body {
 
 .codo_widget .codo_widget-content {
   padding: 25px 15px 15px;
-  background: @widgetContentBg;
+  background: @secColor;
 
 }
 
@@ -1476,8 +1475,8 @@ body {
 }
 
 .codo_block {
-  background: #000;
-  box-shadow: @bockBoxShadow;
+  background: @mainColor;
+  box-shadow: 0 25px 40px 0 #000;
 
 }
 
@@ -2164,17 +2163,16 @@ body.IE7 {
 
 .codo_topics_multiselect {
 
-  display: none;
-  background: #fff;;
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  padding: 6px 12px;
-  box-shadow: 1px 3px 2px @borderColor;
-  border-radius: 2px;
-  z-index: 2;
-
-  border: 1px solid #ccc;
+    display: none;
+    background: #12181f;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding: 6px 12px;
+    box-shadow: 1px 3px 2px #171e26;
+    border-radius: 2px;
+    z-index: 2;
+    border: 1px solid #171e26;
 
   .codo_multiselect_deselect {
 
@@ -2253,7 +2251,7 @@ body.IE7 {
 
     &:after {
       border-color: rgba(136, 183, 213, 0);
-      border-bottom-color: #fff;
+      border-bottom-color: @secColor;
       border-width: 6px;
       margin-left: -30px;
     }
@@ -2268,7 +2266,7 @@ body.IE7 {
 }
 
 .codo_topics_loadmore_div {
-  background-color: #ffffff;
+  background-color: @mainColor;
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
@@ -2298,7 +2296,7 @@ body.IE7 {
 
     i {
 
-      color: #ccc;
+      color: @greenCol !important;
     }
   }
 
@@ -2320,20 +2318,20 @@ body.IE7 {
 
     .codo_topics_curr_page {
 
-      background: @globalNavLink;
+      background: @greenCol;
       color: #fff;
       cursor: default;
 
       &:hover {
 
-        background: @globalNavLink;
+        background: @greenCol;
         color: #fff;
       }
     }
     a {
 
       padding: 8px 12px;
-      background: #e1e1e1;
+      background: @secColor;
       color: #aaa;
       font-weight: bold;
       text-decoration: none;
@@ -2343,7 +2341,7 @@ body.IE7 {
       margin-right: 5px;
 
       &:hover {
-        background: #ccc;
+        background: @darkColor;
       }
     }
   }
@@ -2453,8 +2451,8 @@ body.IE7 {
 .modal-header-warning {
   color: #fff;
   padding: 9px 15px;
-  border-bottom: 1px solid #eee;
-  background-color: #f0ad4e;
+  border-bottom: 1px solid @greenCol;
+  background-color: @mainColor;
   -webkit-border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 5px;
   -moz-border-radius-topleft: 5px;
