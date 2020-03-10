@@ -1134,8 +1134,8 @@ body {
 .codo_btn {
 
   padding: .5em 1.5em;
-  color: rgba(0, 0, 0, .8);
-  border: 1px solid @buttonBorderColor;
+  color: @lightG;
+  border: none;
   background-color: @buttonBg;
   text-decoration: none;
   border-radius: 2px;
@@ -1168,24 +1168,17 @@ body {
 
 .codo_btn_primary {
 
-  border: 0px solid @buttonPrimaryBorderColor;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.0980392) 1px 1px inset, rgba(0, 0, 0, 0.0980392) 1px 1px;
-  box-shadow: rgba(255, 255, 255, 0.0980392) 1px 1px inset, rgba(0, 0, 0, 0.0980392) 1px 1px;
-  //background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.0980392), transparent);
-  //background-repeat: repeat-x;
-  //background-color: @buttonPrimaryBg;
-  color: @buttonPrimaryColor;
-  //border-color: rgba(0, 0, 0, 0.298039);
-  background: @startGradient; /* Old browsers */
-  background: linear-gradient(to right, @startGradient 0%, @endGradient 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   background: @mainColor;
+    box-shadow: none;
+    border-bottom: 1px solid @greenCol;
 
   &:hover, &:focus, &:active {
-    background: linear-gradient(to right, @endGradient 0%, @startGradient 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: @darkColor;
     cursor: pointer;
   }
 
   > a {
-    color: inherit;
+    color: @lightG;
   }
 }
 
