@@ -8,8 +8,8 @@ Installation:
 2. Copy constants.php in sites\default 
 
 The constants.php was modified to use velux_prime assets as default.
-
-To edit the slider/imaages go to templates/forum/topics.tpl from line 9.
+The theme supports UIkit for the slider and other components -> https://getuikit.com/
+To edit the slider go to templates/forum/slider.tpl
 
 Live preview available on https://mixzone.ro
 ![Velux-Prime](https://i.imgur.com/w7nBgG2.png)
