@@ -488,7 +488,7 @@ color: @greenCol;
 body {
     background-attachment: fixed !important;
     background: #1a1d1f url('https://i.imgur.com/mjnG0iB.png') no-repeat center top;
-    background-size: 100%;
+    background-size: cover;
     font-weight: 560;
     line-height: 1.6;
 }
@@ -665,7 +665,14 @@ html {
     background: #fff;
     opacity: 1;
 }
-
+.codo_btn_primary:hover, .codo_btn_primary:focus, .codo_btn_primary:active {
+    background: @mainColor;
+}
+.codo_btn_primary {
+    background: @darkColor;
+    box-shadow: none;
+    border-top: 1px solid @greenCol;
+}
 container .codo_topic .codo_notification_block>.codo_notification_block_desc {
     color: @lightG;
 }
@@ -850,3 +857,4 @@ container .codo_topic .codo_notification_block>.codo_notification_block_desc {
     background: @mainColor;
 }
 //End Scroll Bar
+

@@ -2,6 +2,7 @@
 @CODOLICENSE
 */
 /*
+
 .codo_posts article:hover .codo_posts_user_spec {
 
     display: block;
@@ -348,7 +349,7 @@ body {
 
           //border: 1px solid @articleBorderColor;
           padding: 0;
-          padding-top: 20px;
+          padding-top: 0px;
           position: relative;
           margin-bottom: 0px;
           //background: @articleBg;
@@ -379,7 +380,7 @@ body {
 
             position: absolute;
             right: -4px;
-            top: 20px;
+            top: 60px;
 
             .codo_manage_button {
 
@@ -1588,3 +1589,72 @@ External CSS
     transform: translate3d(0, 0, 0)
   }
 }
+
+//Start Topic View
+.open-topic-table {
+     width: 100%;
+}
+ .open-topic-table thead {
+     background-color: @darkColor;
+}
+ .open-topic-table thead th {
+     font-size: 12px;
+     font-weight: 700;
+     padding: 15px 25px;
+     color: #fff;
+}
+ .open-topic-table thead th.author {
+     text-align: left;
+}
+ .open-topic-table td {
+     padding: 35px 25px;
+}
+ .open-topic-table tr:last-child {
+     border-bottom: none;
+}
+ .open-topic-table .topic-date {
+     padding: 10px 23px;
+     background-color: @mainColor;
+     font-size: 11px;
+}
+ .open-topic-table .author {
+     text-align: center;
+     width: 15%;
+}
+ .open-topic-table .author-thumb {
+     margin-bottom: 20px;
+}
+ .open-topic-table .author-thumb img {
+     display: block;
+     width: 80px;
+     height: 80px;
+}
+ .open-topic-table .author-name {
+     display: block;
+     white-space: nowrap;
+}
+ .open-topic-table .author-name:hover {
+     color: #ff5e3a;
+}
+ .open-topic-table .country {
+     font-size: 11px;
+}
+ .open-topic-table .posts {
+     vertical-align: top;
+}
+
+
+.reply-topic {
+  float: right;
+  color: #ff5e3a;
+  font-size: 11px; }
+
+/*------------- Responsive mode styles --------------*/
+@media (max-width: 640px) {
+  .open-topic-table thead th,
+  .open-topic-table td {
+    padding: 5px; }
+  .open-topic-table .author-thumb img {
+    width: 40px;
+    height: 40px; } }
+//End Topic View

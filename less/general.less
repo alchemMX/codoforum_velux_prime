@@ -171,7 +171,7 @@
 }
 
 hr{
-  border-top: 1px solid #eee;
+  border-top: 1px solid @darkColor;
 }
 
 .hide {
@@ -922,7 +922,7 @@ body {
 
   .codo_selection {
 
-    background: @highlightBg;
+    background: @greenCol;
     color: @highlightColor;
     text-shadow: none;
   }
@@ -1134,8 +1134,8 @@ body {
 .codo_btn {
 
   padding: .5em 1.5em;
-  color: @lightG;
-  border: none;
+  color: rgba(0, 0, 0, .8);
+  border: 1px solid @buttonBorderColor;
   background-color: @buttonBg;
   text-decoration: none;
   border-radius: 2px;
@@ -1168,17 +1168,24 @@ body {
 
 .codo_btn_primary {
 
-   background: @mainColor;
-    box-shadow: none;
-    border-bottom: 1px solid @greenCol;
+  border: 0px solid @buttonPrimaryBorderColor;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.0980392) 1px 1px inset, rgba(0, 0, 0, 0.0980392) 1px 1px;
+  box-shadow: rgba(255, 255, 255, 0.0980392) 1px 1px inset, rgba(0, 0, 0, 0.0980392) 1px 1px;
+  //background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.0980392), transparent);
+  //background-repeat: repeat-x;
+  //background-color: @buttonPrimaryBg;
+  color: @buttonPrimaryColor;
+  //border-color: rgba(0, 0, 0, 0.298039);
+  background: @startGradient; /* Old browsers */
+  background: linear-gradient(to right, @startGradient 0%, @endGradient 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
   &:hover, &:focus, &:active {
-    background: @darkColor;
+    background: linear-gradient(to right, @endGradient 0%, @startGradient 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     cursor: pointer;
   }
 
   > a {
-    color: @lightG;
+    color: inherit;
   }
 }
 
@@ -1654,7 +1661,7 @@ body {
     top: -2px;
   }
   span.codo_switch_on {
-    color: @switchOnColor;
+    color: @greenCol;
   }
   .codo_switch_toggle {
 
@@ -2507,6 +2514,11 @@ body.IE7 {
     width: 1115px;
   }
 }
+@media (min-width: 1400px) {
+  .container {
+    width: 1300px;
+  }
+}
 
 .chk-box {
   display: none;
@@ -2515,12 +2527,12 @@ body.IE7 {
     border: 1px solid #7f83a2;
     content: "\00a0";
     display: inline-block;
-    font: 20px/1em sans-serif;
-    height: 20px;
+    font: 15px/1em sans-serif;
+    height: 15px;
     margin: 0 .25em 0 0;
     padding: 0;
     vertical-align: top;
-    width: 20px;
+    width: 15px;
     z-index: 1;
     border-radius: 2px;
   }
@@ -2645,4 +2657,11 @@ select.form-control:not([size]):not([multiple]) {
   .icon-message {
     color: @statisticsIconNumRepliesColor;
   }
+}
+
+.author-thumb img {
+    border-radius: 100%;
+    overflow: hidden;
+    max-width: unset;
+    display: block;
 }

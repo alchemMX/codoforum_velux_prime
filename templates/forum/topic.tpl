@@ -118,6 +118,7 @@
         <div class="row">
 
             <div class="codo_posts col-md-9">
+            
 
                 {"block_posts_before"|load_block}
                 <div class="codo_widget">

@@ -67,44 +67,35 @@
             {{/if}}
         {{/if}}
     </div>
-
-    <div class="codo_posts_user_info">
-        <div class="codo_posts_post_avatar" data-userid="{{id}}">
-            <a href="{{{const "RURI"}}}user/profile/{{id}}">
-                <img draggable="false" src="{{avatar}}" />
-            </a>
-        </div>
-        <!--<div class="codo_posts_post_title">
-
-        </div>-->
-		
-        <div class="codo_posts_post_name">
-            <a href="{{{const "RURI"}}}user/profile/{{id}}"><span class="role_styled role_{{{role}}}">{{{name}}}</span></a>
-        </div>
-
-        <div class="codo_posts_post_desc">
-            {{#if in_search}}
+<table class="open-topic-table">
+                
+                    <thead>
+                
+                    <tr>
+                        <th class="author">
+                            Author
+                        </th>
+                
+                        <th class="posts">
+                            Post
+                        </th>
+                    </tr>
+                
+                    </thead>
+                
+                    <tbody>
+                
+                    <tr>
+                        <td class="topic-date" colspan="2">
+                           {{#if in_search}}
             {{{i18n "posted"}}}&nbsp;<a href="{{{const "RURI"}}}topic/{{tid}}/{{safe_title}}/post-{{post_id}}#post-{{post_id}}">{{post_created}}</a>
             {{else}}
             <span>
                 {{{i18n "posted"}}}&nbsp;<a href="{{{const "RURI"}}}topic/{{tid}}/{{safe_title}}/{{page}}#post-{{post_id}}">{{post_created}}</a>
             </span>
             {{/if}}
-        </div>
-		
-        <div class="codo_posts_user_spec">
-        </div>
-    </div>
-    <div class="codo_posts_post_content">
-        <div class="codo_posts_post_message">{{{message}}}</div>
-        <div class="codo_posts_post_imessage">{{imessage}}</div>
-
-        {{#if signature}}
-            <div class="codo_posts_signature">{{{signature}}}</div>
-        {{/if}}
-
-        
-        {{#if post_modified}}
+            <div class="reply-topic">
+            {{#if post_modified}}
             <div class="codo_last_edit">{{{i18n "edited"}}} {{post_modified}}</div>
         {{/if}}
         
@@ -115,7 +106,31 @@
         {{#if can_move_post}}
             <input type="checkbox" name="group1" id="codo_posts_select_{{{post_id}}}" class="chk-box codo_posts_select_post"/>
             <label class="codo_select_post_checkbox_label" for="codo_posts_select_{{{post_id}}}"></label>
+        {{/if}}</div>
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td class="author">
+                            <div class="author-thumb" data-userid="{{id}}">
+            <a href="{{{const "RURI"}}}user/profile/{{id}}">
+                <img draggable="false" src="{{avatar}}" />
+            </a>
+        </div>
+                            <div class="author-content">
+                                  <a href="{{{const "RURI"}}}user/profile/{{id}}"><span class="role_styled role_{{{role}}}">{{{name}}}</span></a>
+                                <div class="country">{{{no_posts}}} Posts</div>
+                            </div>
+                        </td>
+                        <td class="posts">
+                            <div class="codo_posts_post_message">{{{message}}}</div>
+        
+
+        {{#if signature}}
+            <div class="codo_posts_signature">{{{signature}}}</div>
         {{/if}}
+
+        
     
         
         {{#if can_rep}}
@@ -126,7 +141,11 @@
         </div>
         {{/if}}
 
-    </div>  
+                           
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
 
 </article>
 <!--<div class="codo_topic_separator"></div>-->
