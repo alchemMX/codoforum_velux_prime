@@ -573,7 +573,14 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    min-width: 1115px;
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    min-width: 1315px;
+    max-width: 1400px;
   }
 }
 
@@ -3023,7 +3030,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #212529;
+  color: @lightG;
   text-align: left;
   list-style: none;
   background-color: @secColor;

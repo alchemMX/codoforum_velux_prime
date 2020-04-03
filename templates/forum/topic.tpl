@@ -15,9 +15,9 @@
 
         <div class="row">
 
-            <div class="codo_icon_header col-lg-12 d-none d-sm-block d-lg-none d-block d-sm-none" style="padding: 0">
+            <div class="codo_icon_header col-lg-12 d-none d-sm-block d-lg-none d-block d-sm-none" style="padding: 0; margin-top: 10px;">
                 {if $can_reply}
-                    <button id="codo_create_topic_btn" type="submit" class="btn btn-default btn-light codo_can_reply codo_reply_btn"
+                    <button id="codo_create_topic_btn" type="submit" class="btn btn-default btn-primary codo_can_reply codo_reply_btn"
                             style="width:100%">{_t("Reply")}</button>
                 {/if}
             </div>
