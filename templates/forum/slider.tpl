@@ -5,7 +5,7 @@
 *}
 
 
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" style="border-bottom: 5px solid #5fcc29;margin-bottom: 16px;" uk-slider>
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" style="border-bottom: 5px solid #5fcc29;margin-top: 30px;margin-bottom: 16px;" uk-slider>
 
     <ul class="uk-slider-items uk-child-width-1 ">
         <li>
